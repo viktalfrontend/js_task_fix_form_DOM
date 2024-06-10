@@ -1,0 +1,2 @@
+function e(e){var t=e;return("firstName"===e||"lastName"===e)&&(t=e.slice(0,-4)+" "+e.slice(-4).toLowerCase()),t}document.querySelectorAll("form").forEach(function(t){t.querySelectorAll("input").forEach(function(t){var l=document.createElement("label"),r=e(t.name),n=r.slice(0,1).toUpperCase()+r.slice(1);t.insertAdjacentElement("beforebegin",l),l.classList.add("field-label"),l.setAttribute("for",t.id),l.textContent=e(t.name),t.setAttribute("placeholder",n)})});
+//# sourceMappingURL=index.e3fb8ac9.js.map
